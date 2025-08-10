@@ -1,8 +1,9 @@
 import keyboard
 import os
 import time
-# açmak istediğimiz dosyanın yolu 
-file_path = r"projectpath"
+
+
+file_path = r"projectpath" # dosya yolunu kendi dosyanızın yolu ile değiştirin
 
 def open_file():
     print("[*] Panic mode activated — opening cover file...")
@@ -10,7 +11,7 @@ def open_file():
 
 print("Listening for F9... (press ESC to quit)")
 
-# arkaplanda F9 tuşuna basıldığında open_file fonksiyonunu çağır
+# arkaplanda F9 tuşuna basıldığında open_file fonksiyonunu çağırır. 
 keyboard.add_hotkey('F9', open_file)
 
 # keyboard interrupt gelene kadar dinlemeye devam et
